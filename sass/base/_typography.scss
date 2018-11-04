@@ -1,14 +1,14 @@
 body {
     font-size: 1.6rem;
     font-family: Krub;
-    background-image: linear-gradient(rgba($color-primary-dark, .9), rgba($color-primary-dark, .9)), url(https://us.123rf.com/450wm/memoangeles/memoangeles1410/memoangeles141000032/33113594-salami-pizza-slice-clip-art-illustration-with-simple-gradients-all-in-a-single-layer-.jpg?ver=6);
+    
     background-attachment: fixed;
-    color: $color-white;
+    color: $color-light-gray-1;
     margin: 2rem;
     background-size: 20%;
 }
 .secondary-title {
-    color: $color-secondary;
+    color: $color-secondary-dark;
     width: 75%;
     position: relative;
     &::after {
@@ -18,12 +18,13 @@ body {
         height: 100%;
         transform: translateY(-50%);
         margin-left: 3rem;
-        border-bottom: solid 5px orange;
+        border-bottom: solid 5px $color-secondary-dark;
     }
     margin: 2rem;
     font-size: 3rem;
 }
-.title {
+
+.title-primary {
     position: relative;
     transition: all .7s;
     display: inline-block;
@@ -34,5 +35,19 @@ body {
     text-align: center;
     margin: 3rem;
     font-size: 5rem;
-
+    color: $color-primary-light;
 }
+.title-white {
+    position: relative;
+    transition: all .7s;
+    display: inline-block;
+    margin: 0 auto;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    text-align: center;
+    margin: 3rem;
+    font-size: 5rem;
+    color: $color-white;
+}
+

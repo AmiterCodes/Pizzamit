@@ -1,7 +1,16 @@
 .menu {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizzabg.jpg);
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    margin-top: 10vh;
+    transform: skewY(-10deg); 
+    display: flex;
+    flex-direction: column;
+    & > * {
+        transform: skewY(10deg);  
+    }
     &__menu {
-        margin-right: 30%;
-        margin-bottom: 10rem;
+        margin: 0 auto;
         width: 50%;
         background-color: rgba($color-primary, .4);
         box-shadow: 0 1rem 2rem rgba(black, .6);
@@ -12,7 +21,7 @@
         transition: all .2s;
         &:hover {
             background-color: rgba($color-primary, .8);
-            transform: translateY(-5px);
+            transform: translateY(-5px) skewY(10deg);
         }
     }
     &__itemhead {
