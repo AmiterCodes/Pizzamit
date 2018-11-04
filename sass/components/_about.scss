@@ -1,0 +1,23 @@
+.about {
+    width: 50%;
+    margin: 5rem 0;
+    margin-left: 40%;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(black, .5);
+    background-color:rgba($color-primary, .6);
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:hover {
+        background-color:rgba($color-primary, .9);
+        transform: translateY(-5px);
+    }
+    &__desc {
+        text-align: center;
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,44 @@
+.order {
+    &__label {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+    &__input {
+        background-color: $color-light-gray-1;
+        padding: 1rem;
+        border-radius: 2000px;
+        border: none;
+        width: 50%;
+        transition: all .5s;
+        &:focus {
+            padding-left: 2rem;
+            background-color: white;
+            outline: none;
+        }
+    }
+    &__submit {
+        font-size: 3rem;
+        font-weight: 300;
+        color: white;
+        background-color: $color-secondary;
+        border: none;
+        padding: 2rem;
+        border-radius: 40px;
+        text-shadow: 0 .2rem 1rem rgba(black, .2);
+        transition: all .2s;
+        outline: none;
+        &:hover {
+            transform: translateX(5px);
+        }
+        &:active {
+            transform: translateX(3px);
+        }
+    }
+    &__value {
+        margin: 2rem;
+        width: 60%;
+        justify-content: space-between;
+        display: flex;
+
+    }
+}

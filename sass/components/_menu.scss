@@ -1,0 +1,34 @@
+.menu {
+    &__menu {
+        margin-right: 30%;
+        margin-bottom: 10rem;
+        width: 50%;
+        background-color: rgba($color-primary, .4);
+        box-shadow: 0 1rem 2rem rgba(black, .6);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 150%;
+        transition: all .2s;
+        &:hover {
+            background-color: rgba($color-primary, .8);
+            transform: translateY(-5px);
+        }
+    }
+    &__itemhead {
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bold;
+         
+    }
+    &__item {
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: 300;
+        
+        &--name {
+            font-weight: 300;
+            width: 50%;
+        }
+    }
+}

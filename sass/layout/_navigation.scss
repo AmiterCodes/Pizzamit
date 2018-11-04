@@ -1,0 +1,42 @@
+.nav {
+    background-color: $color-dark-gray-1;
+    padding: 0 1rem;
+    display: flex;
+    position: sticky;
+    &__link {
+        padding: 2rem 0;
+        display: inline-block;
+        color: $color-light-gray-1;
+        text-decoration: none;
+        transition: all .3s;
+        border-bottom: solid 3px transparent;
+        &:not(:last-child) {
+            padding: 2rem 1rem;
+        }
+
+        &:hover {
+            color: white;
+            border-bottom: solid 3px $color-primary-light;
+        }
+    }
+    &__logo {
+        position: absolute;
+        align-self: center;
+        justify-self: flex-end;
+        display: inline-block;
+        right: 5%;
+        font-size: 3rem;
+        color: $color-primary-light;
+        display: flex;
+        transition: all .2s;
+        &--icon {
+            transition: all .2s;
+            margin-right: 1rem;
+            display: inline-block;
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+        
+    }
+}
