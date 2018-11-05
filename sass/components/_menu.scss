@@ -1,5 +1,7 @@
 .menu {
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizzabg.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizza2.jpg);
+    background-size: cover;
+    
     padding-top: 25vh;
     padding-bottom: 25vh;
     margin-top: 10vh;
@@ -39,5 +41,10 @@
             font-weight: 300;
             width: 50%;
         }
+    }
+    &__item-desc {
+        font-size: 1.6rem;
+        color: $color-light-gray-2;
+        margin-left: 6rem;
     }
 }

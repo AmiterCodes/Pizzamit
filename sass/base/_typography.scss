@@ -1,11 +1,9 @@
 body {
     font-size: 1.6rem;
     font-family: Krub;
-    
-    background-attachment: fixed;
+    background-color: $color-dark-gray-1;
     color: $color-light-gray-1;
     margin: 2rem;
-    background-size: 20%;
 }
 .secondary-title {
     color: $color-secondary-dark;
@@ -30,6 +28,7 @@ body {
     display: inline-block;
     margin: 0 auto;
     &:hover {
+        text-shadow: 0 1rem 2rem rgba($color-black, .5);
         transform: translateY(-5px);
     }
     text-align: center;
@@ -43,6 +42,7 @@ body {
     display: inline-block;
     margin: 0 auto;
     &:hover {
+        text-shadow: 0 1rem 2rem rgba($color-black, .5);
         transform: translateY(-5px);
     }
     text-align: center;

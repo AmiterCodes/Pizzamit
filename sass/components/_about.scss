@@ -2,9 +2,14 @@
     width: 50%;
     margin: 5rem 0;
     margin-left: 40%;
-    padding: 2rem;
+    padding: 5rem;
+    padding-top: 15rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizza3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     box-shadow: 0 1rem 2rem rgba(black, .5);
     background-color:rgba($color-primary, .6);
+    clip-path: polygon(0 42%, 100% 3%, 100% 92%, 19% 100%);
     transition: all .5s;
     display: flex;
     justify-content: center;

@@ -1,0 +1,11 @@
+.club {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 11%, 86% 93%, 0 100%);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizza5.jpg);
+    background-size: cover;
+    padding: 20rem;
+    margin: 10rem;
+    &__desc {
+        font-size: 2rem;
+    }
+}

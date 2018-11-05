@@ -2,6 +2,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizzabg.jpg);
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     &__title {
         position: absolute;
@@ -12,9 +13,11 @@
             color: $color-white;
             text-transform: uppercase;
             font-size: 16rem;
+            letter-spacing: 6.5rem;
             font-weight: 400;
         }
         &--desc {
+            letter-spacing: 3rem;
             font-size: 4rem;
             text-transform: uppercase;
             color: $color-light-gray-1;

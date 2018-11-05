@@ -1,7 +1,11 @@
 .order {
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizzabg.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary, .8)),url(../img/pizza4.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 11%, 86% 93%, 0 100%);
+    margin: 10rem;
     padding: 5rem;
-    clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
+    position: relative;
+    z-index: 5;
     width: 60%;
     &__label {
         font-size: 2rem;
@@ -45,4 +49,16 @@
         display: flex;
 
     }
+}
+.order-bg {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary, .8), rgba($color-secondary-dark, .8)),url(../img/pizza6.jpg);
+    background-size: cover;
+    position: absolute;
+    margin-top: -10vh;
+    right: 20vw;
+    top: 0;
+    clip-path: polygon(28% 13%, 100% 9%, 89% 100%, 7% 93%);
+
+    width: 70vw;
+    height: 90vh;
 }

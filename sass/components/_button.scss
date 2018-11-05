@@ -1,0 +1,18 @@
+.button {
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    background-color: $color-secondary;
+    border: none;
+    padding: 2rem;
+    border-radius: 40px;
+    text-shadow: 0 .2rem 1rem rgba(black, .2);
+    transition: all .2s;
+    outline: none;
+    &:hover {
+        transform: translateX(5px);
+    }
+    &:active {
+        transform: translateX(3px);
+    }
+}
