@@ -1,0 +1,95 @@
+.reviews {
+    width: 80%;
+    
+}
+.review {
+    &:nth-child(even) {
+        margin-left: 20vw;
+    }
+    &:nth-child(odd) {
+        margin-right: 20vw;
+    }
+    &:nth-child(4n + 0) {
+        clip-path: polygon(14% 0, 100% 6%, 100% 100%, 0 92%);
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-primary-dark, .8)),url(../img/pizza6.jpg);
+    
+        background-size: cover;
+    }
+    &:nth-child(4n + 1) {
+        clip-path: polygon(0 12%, 78% 0, 100% 86%, 0 99%);
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-secondary-dark, .8)),url(../img/pizza8.jpg);
+        background-size: cover;
+    }
+    &:nth-child(4n + 2) {
+        clip-path: polygon(0 3%, 100% 8%, 96% 100%, 5% 100%);
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-primary-dark, .8)),url(../img/pizza7.jpg);
+        background-size: cover;
+
+    }
+    &:nth-child(4n + 3) {
+        clip-path: polygon(0 2%, 94% 0, 100% 89%, 11% 100%);
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .8), rgba($color-secondary-dark, .8)),url(../img/pizza5.jpg);
+        background-size: cover;
+
+    }
+    &:not(:first-child) {
+        
+    margin-top: -10rem;
+    }
+    background-size: cover;
+    padding: 10rem;
+    background: $color-primary;
+    display: flex;
+    &__reviewer {
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--img {
+            margin-bottom: 2rem;
+            width: 20rem;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &--name {
+            font-size: 3rem;
+            &::before {
+                font-weight: 400;
+                content: '-'
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__title {
+        font-style: italic;
+        font-size: 3rem;
+        &::before {
+            content: '"';
+        }
+        &::after {
+            content: '"';
+        }
+    }
+    &__description {
+        font-size: 2rem;
+        font-style: italic;
+    }
+    &__rating {
+        display: flex;
+        font-size: 3rem;
+        &--stars {
+            font-size: 3rem;
+            color: $color-secondary;
+            text-shadow: 0 1rem 2rem rgba($color-black, .4);
+        }
+        &--desc {
+
+        }
+    }
+    
+}

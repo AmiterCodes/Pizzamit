@@ -223,6 +223,74 @@ body {
     width: 80%;
     margin: 0 auto; }
 
+.reviews {
+  width: 80%; }
+
+.review {
+  background-size: cover;
+  padding: 10rem;
+  background: #E57C04;
+  display: flex; }
+  .review:nth-child(even) {
+    margin-left: 20vw; }
+  .review:nth-child(odd) {
+    margin-right: 20vw; }
+  .review:nth-child(4n + 0) {
+    clip-path: polygon(14% 0, 100% 6%, 100% 100%, 0 92%);
+    background-image: linear-gradient(to right bottom, rgba(229, 124, 4, 0.8), rgba(246, 62, 2, 0.8)), url(../img/pizza6.jpg);
+    background-size: cover; }
+  .review:nth-child(4n + 1) {
+    clip-path: polygon(0 12%, 78% 0, 100% 86%, 0 99%);
+    background-image: linear-gradient(to right bottom, rgba(229, 124, 4, 0.8), rgba(250, 163, 0, 0.8)), url(../img/pizza8.jpg);
+    background-size: cover; }
+  .review:nth-child(4n + 2) {
+    clip-path: polygon(0 3%, 100% 8%, 96% 100%, 5% 100%);
+    background-image: linear-gradient(to right bottom, rgba(229, 124, 4, 0.8), rgba(246, 62, 2, 0.8)), url(../img/pizza7.jpg);
+    background-size: cover; }
+  .review:nth-child(4n + 3) {
+    clip-path: polygon(0 2%, 94% 0, 100% 89%, 11% 100%);
+    background-image: linear-gradient(to right bottom, rgba(229, 124, 4, 0.8), rgba(250, 163, 0, 0.8)), url(../img/pizza5.jpg);
+    background-size: cover; }
+  .review:not(:first-child) {
+    margin-top: -10rem; }
+  .review__reviewer {
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .review__reviewer--img {
+      margin-bottom: 2rem;
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 50%; }
+    .review__reviewer--name {
+      font-size: 3rem; }
+      .review__reviewer--name::before {
+        font-weight: 400;
+        content: '-'; }
+  .review__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .review__title {
+    font-style: italic;
+    font-size: 3rem; }
+    .review__title::before {
+      content: '"'; }
+    .review__title::after {
+      content: '"'; }
+  .review__description {
+    font-size: 2rem;
+    font-style: italic; }
+  .review__rating {
+    display: flex;
+    font-size: 3rem; }
+    .review__rating--stars {
+      font-size: 3rem;
+      color: #F3B700;
+      text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
 .nav {
   background-color: #222;
   padding: 0 1rem;
